@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: cornsilk; 
+    display:block; 
+}
+h1{
+   text-align: center;
+}
+.container{
+    cursor: pointer;
+    width: 70vw;
+    height: auto;
+    margin: 100px 100px 100px 100px;
+}
+.columnDiv{
+    display: flex;
+}
+.rowDiv{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.rowDiv:hover{
+    background-color: crimson;
+    /* animation-name: hover;
+    animation-duration: 5.5s;
+    transition-property:all;
+    transition-duration: 20ms;
+    transition-timing-function: linear;
+    transition-delay: 70ms; */
+}
+/* @keyframes hover{
+    0% {background-color: azure;}
+    40%{background-color: deeppink;}
+    80%{background-color: sienna;}
+    100%{background-color: crimson;}
+} */
