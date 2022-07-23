@@ -1,7 +1,19 @@
 // let gridSelect=Number(prompt('How many squares do you want per side?'));
+// colorMe()
+// for (let x=0; x<gridSelect;x++) {
+//     const column=document.createElement('div');
+//     column.classList.add("columnDiv");
+//     for (let y=0;y<gridSelect;y++) {
+//         const rows=document.createElement('div');
+//         rows.classList.add("rowDiv");
+//         column.append(rows)
+//     }
+//     containerDiv.append(column);
+// }
+
 // function colorMe() {
 //     // let rowDiv=document.querySelector('.rowDiv')
-//     const btnDiv=document.querySelector('.btnDiv');
+//     // const btnDiv=document.querySelector('.btnDiv');
 //     colorBtn.textContent='Color Picker';
 //     colorBtn.addEventListener('click', () => {
 //         rows.forEach( row => row.addEventListener("mouseover", () => {
@@ -15,17 +27,7 @@
 //     btnDiv.append(colorBtn); 
 // }
 
-// colorMe()
-// for (let x=0; x<gridSelect;x++) {
-//     const column=document.createElement('div');
-//     column.classList.add("columnDiv");
-//     for (let y=0;y<gridSelect;y++) {
-//         const rows=document.createElement('div');
-//         rows.classList.add("rowDiv");
-//         column.append(rows)
-//     }
-//     containerDiv.append(column);
-// }
+
 const body=document.querySelector('body');
 const containerDiv=document.querySelector('.container')
 document.querySelector("button").addEventListener("click", () => {
@@ -37,12 +39,14 @@ document.querySelector("button").addEventListener("click", () => {
         for (let y=0;y<gridSelect;y++) {
             const rows=document.createElement('div');
             rows.classList.add("rowDiv");
+            rows.addEventListener("mouseover", () => {
+                rows.style.backgroundColor="#00abee"
+            })
             column.append(rows)
-        }
         containerDiv.append(column);
     }
     
-})
+}})
 
 
 
