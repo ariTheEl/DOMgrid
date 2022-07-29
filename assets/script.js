@@ -1,6 +1,3 @@
-let R=Math.random()*255;
-let G=Math.random()*255;
-let B=Math.random()*255;
 
 const body=document.querySelector('body');
 const containerDiv=document.querySelector('.container')
@@ -15,6 +12,9 @@ document.querySelector("button").addEventListener("click", () => {
             rows.classList.add("rowDiv");
 
             rows.addEventListener("mouseover", () => {
+                let R=Math.floor(Math.random()*255);
+                let G=Math.floor(Math.random()*255);
+                let B=Math.floor(Math.random()*255);
                 rows.style.background=`rgb(${R}, ${G}, ${B})`
             })
             column.append(rows)
@@ -25,6 +25,6 @@ document.querySelector("button").addEventListener("click", () => {
 
 
 
-
+ 
 
 
